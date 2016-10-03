@@ -2,11 +2,13 @@ package examJan16;
 
 public class LetterSupplierC extends LetterSupplierA {
 
-    public char upperCaseLetter(){
+    public char upperCaseLetter() {
+
         return 'C';
     }
 
-    public char letter(){
+    public char letter() {
+
         return 'X';
     }
 }

@@ -5,23 +5,23 @@ package examJan15;
  */
 public class minShort {
 
-    public static int mshort(int a, int b, int c, int d){
+    public static int mshort(int a, int b, int c, int d) {
 
-        int [] v = {a,b,c,d};
+        int[] v = {a, b, c, d};
         int y = v[0];
 
-        for(int pos=0;pos<v.length;pos++){
+        for (int pos = 0; pos < v.length; pos++) {
 
-            if(y>v[pos]){
+            if (y > v[pos]) {
                 y = v[pos];
             }
         }
         return y;
     }
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
-        int result = mshort(10,3,7,4);
+        int result = mshort(10, 3, 7, 4);
         System.out.println(result);
 
         String s = new String("Hej");

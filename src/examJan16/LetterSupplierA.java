@@ -1,10 +1,13 @@
 package examJan16;
 
-public class LetterSupplierA implements LetterSupplier{
-    public char lowerCaseLetter(){
+public class LetterSupplierA implements LetterSupplier {
+    public char lowerCaseLetter() {
+
         return 'a';
     }
-    public char upperCaseLetter(){
+
+    public char upperCaseLetter() {
+
         return 'A';
     }
 }

@@ -13,3 +13,6 @@ hs_err_pid*
 
 # Extras
 *.iml
+
+# IDEA folder
+.idea

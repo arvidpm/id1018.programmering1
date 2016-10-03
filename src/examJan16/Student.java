@@ -8,12 +8,12 @@ public class Student {
     public int[] grades;
 
 
-    public Student(String name){
+    public Student(String name) {
         this.name = name;
         grades = new int[GRADE_COUNT];
     }
 
-    public void setGrade(int gradeIndex, int grade){
+    public void setGrade(int gradeIndex, int grade) {
         this.grades[gradeIndex] = grade;
     }
 
@@ -39,23 +39,22 @@ public class Student {
         return sb.toString();
     }
 
-    public double averageGrade(){
-        double a= this.grades[0]+this.grades[1]+this.grades[2]+this.grades[3];
-        double f= a/(this.grades.length);
+    public double averageGrade() {
+        double a = this.grades[0] + this.grades[1] + this.grades[2] + this.grades[3];
+        double f = a / (this.grades.length);
         return f;
 
     }
 
 
-
-    public static void main(String args[]){
+    public static void main(String args[]) {
 
         Student student = new Student("Anna Ericsson");
 
-        student.setGrade(0,3);
-        student.setGrade(1,4);
-        student.setGrade(2,5);
-        student.setGrade(3,5);
+        student.setGrade(0, 3);
+        student.setGrade(1, 4);
+        student.setGrade(2, 5);
+        student.setGrade(3, 5);
 
 
         System.out.println(student);

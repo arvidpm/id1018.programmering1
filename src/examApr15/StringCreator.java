@@ -12,7 +12,7 @@ public class StringCreator {
 
         this.chars = new char[chars.length + 1];
 
-        for(int pos = 0; pos<chars.length; pos++){
+        for (int pos = 0; pos < chars.length; pos++) {
             this.chars[pos] = chars[pos];
         }
         charCount = chars.length;
@@ -28,19 +28,17 @@ public class StringCreator {
         this.chars[this.chars.length] = c;
         System.out.println(this.chars[this.chars.length]);
 
-        for (int a = this.chars.length; a > this.chars.length;a--){
-            this.chars[a-1] = this.chars[a];
+        for (int a = this.chars.length; a > this.chars.length; a--) {
+            this.chars[a - 1] = this.chars[a];
         }
 
-    // koden saknas här
-    // utöka inte teckenvektorn
+        // koden saknas här
+        // utöka inte teckenvektorn
     }
 
     public String toString() {
         return new String(chars, 0, charCount);
     }
-
-
 
 
     public static void main(String args[]) {

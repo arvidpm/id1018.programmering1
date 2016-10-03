@@ -28,7 +28,7 @@ class Country {
         int m = 0;
 
         for (int x = 0; x < countries.length; x++) {
-            if (countries[x].name ().charAt(0) == firstLetter) {
+            if (countries[x].name().charAt(0) == firstLetter) {
                 m++;
             }
         }
@@ -36,7 +36,7 @@ class Country {
         Country[] z = new Country[m];
         for (int c = 0; c < countries.length; c++) {
 
-            if (countries[c].name ().charAt(0) == firstLetter) {
+            if (countries[c].name().charAt(0) == firstLetter) {
                 z[d] = countries[c];
                 d++;
             }
@@ -44,7 +44,8 @@ class Country {
         return z;
 
     }
-    public static void main(String[] args){
+
+    public static void main(String[] args) {
 
         Country[] lander = {
                 new Country("SVERIGE", "Stockholm"),
@@ -53,10 +54,10 @@ class Country {
                 new Country("FINLAND", "Helsingfors"),
                 new Country("POLEN", "Warszawa")};
 
-        Country[] z = filter(lander,'F');
+        Country[] z = filter(lander, 'F');
 
 
-        for(Country j : z){
+        for (Country j : z) {
             System.out.println(j);
         }
     }
